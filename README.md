@@ -1,2 +1,2 @@
-#Conenctions Lab
-##Fall '20
+# Connections Lab
+## Fall '20

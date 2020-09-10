@@ -1,0 +1,11 @@
+h1 {
+    color: red;
+    font-size: 42px;
+    font-family: monospace;
+}
+
+body {
+    background : yellow;
+    background-image: url('https://placekitten.com/400/400');
+    background-repeat: no-repeat;
+}

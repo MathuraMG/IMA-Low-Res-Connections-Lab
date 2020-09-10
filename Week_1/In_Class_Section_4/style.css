@@ -1,0 +1,10 @@
+h1 {
+    color: rgb(238, 255, 0);
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    width: 100%;
+    display: block;
+}

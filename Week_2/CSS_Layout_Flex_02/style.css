@@ -1,0 +1,51 @@
+body {
+	font-family: Arial;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	text-align: center;
+}
+
+.bio__flex__container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: gray;
+	margin: 0 auto;
+}
+
+.bio {
+	width: 15%;
+	min-width: 200px;
+	background-color:red;
+	padding: 10px;
+	margin:5px;
+}
+
+.bio-pic {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	margin: 5px auto;
+}
+
+.bio-text {
+	margin-top: 15px;
+	padding: 10px;
+}
+
+@media (max-width: 560px) {
+	p{
+		width: 70%;
+		text-align: center;
+		margin: 20px auto 30px;
+	}
+
+	.bio__flex__container{
+		flex-direction: column;
+		align-items: center;
+	}
+}

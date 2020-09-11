@@ -1,36 +1,35 @@
-
 body {
-    padding: 50px;
-    background-color: hotpink;
+    padding: 20px;
+    background-color: #fffbe4;
     background-image: url('https://placekitten.com/200/200');
-    background-repeat: repeat;
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+}
+
+.project__section-desc {
+    background-color: #fffbe488;
+    border-radius: 30px;
+}
+.project__section {
+    width: 100%;
+    margin: 40px 0;
+    
 }
 
 .project__heading {
-    background-color: #ffffff88;
-    padding: 10px;
-    text-align: center;
-    font-size: 32px;
-    border-radius: 30px;
+    color: red;
 }
 
-section { 
-    width:100%;
+.project__desc {
+    width: 49%;
+    display: inline-block;
+    margin: 0;
 }
 
-.project__section {
-   width: 100%;
+.project__video {
+    width: 50%;
 }
 
 .project__image {
     width: 32%;
-}
-
-.project__desc {
-    width: 50%;
-    display: inline-block;
-}
-
-.project__video {
-    width: 49%;
 }

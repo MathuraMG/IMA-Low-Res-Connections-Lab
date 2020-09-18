@@ -1,0 +1,14 @@
+
+
+h1 {
+    color:red;
+}
+
+h2 {
+    color: blue;
+    position: absolute;
+    top: 0;
+    left: 300px;
+}
+
+

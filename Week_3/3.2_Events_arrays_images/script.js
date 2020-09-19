@@ -24,3 +24,7 @@ function rotate() {
   }
 }
 
+//select for the button element
+let button = document.getElementById('button');
+//attach the event listener
+button.addEventListener('click', rotate);

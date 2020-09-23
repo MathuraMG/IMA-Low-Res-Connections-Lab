@@ -17,3 +17,6 @@
   * [CSS_Layout_Flex_01](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_2/CSS_Layout_Flex_01)
   * [CSS_Layout_Flex_02](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_2/CSS_Layout_Flex_02)
   * [CSS_Layout_Fluid_Responsive](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_2/CSS_Layout_Fluid_Responsive)
+
+[Week 3 - Making Things Happen on the Page](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3)
+

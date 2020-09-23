@@ -17,10 +17,10 @@
 
 [Week 3 - Making Things Happen on the Page](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3)
 * [JS_DOM](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.1_JS_DOM)
-* [Events - Basic](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events)
+* [Events - Number Counter and CSS Color](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events)
 * [Events - Arrays and Images](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events_arrays_images)
 * [Events - Arrays and Text](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events_arrays_text)
-* [Events - Style and Colors](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events_color)
+* [Events - More with CSS Colors](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.2_Events_color)
 * [jQuery - Classes](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.3_jQuery_classes)
 * [jQuery - Number Counter](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.3_jQuery_number_counter)
 

@@ -30,4 +30,5 @@
 * [Get JSON with AJAX](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.2_Get_JSON_with_AJAX)
 * [Pokemon Example](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.2_Get_JSON_with_AJAX)
 
-[Week 5 - JSON to p5]()
+[Week 5 - JSON to p5](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_5)
+* [JSON to p5 with Fetch](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_5/5.5_JSON%20to%20p5%20with%20Fetch)

@@ -24,3 +24,10 @@
 * [jQuery - Classes](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.3_jQuery_classes)
 * [jQuery - Number Counter](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_3/3.3_jQuery_number_counter)
 
+[Week 4 - Working with Data & APIs](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4)
+* [Fetch with Static JSON Data](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.1_Fetch%20with%20Static%20JSON%20Data)
+* [Fetch](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.2_Fetch)
+* [Get JSON with AJAX](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.2_Get_JSON_with_AJAX)
+* [Pokemon Example](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_4/4.2_Get_JSON_with_AJAX)
+
+[Week 5 - JSON to p5]()

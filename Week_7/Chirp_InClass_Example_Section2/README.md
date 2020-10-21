@@ -9,6 +9,8 @@ Chirp App Development Flow
 ### Development Steps 
 (starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_7/Chirp_InClass_Example_START))
 
+##### Guiding thought - "Folloe the data"
+
 #### Step 1:
 - In the client js, create an event listener on the button
 - Grab the input values when the button is clicked

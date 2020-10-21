@@ -6,7 +6,7 @@ Goals:
 2) Save the chirp in a DB
 3) Display all chirps on the page
 
-Development Steps (starting with the boilerplate code)
+Development Steps (starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_7/Chirp_InClass_Example_START))
 
 Step 1:
 - In the client js, create an event listener on the button
@@ -14,7 +14,7 @@ Step 1:
 
 Step 2:
 - Create an object with the data we care about
-- This includes name, chirp, and maybe date
+- This includes name, chirp, and possibly date
 
 Step 3:
 - Make sure our data is in JSON form

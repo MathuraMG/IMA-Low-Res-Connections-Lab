@@ -1,4 +1,4 @@
-Chirp App Development Flow
+"Chirp" App Development Flow
 ---------------------
 
 ### Goals:

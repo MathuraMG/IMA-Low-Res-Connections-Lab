@@ -2,17 +2,16 @@
 let socket = io();
 
 //Listen for confirmation of connection
-socket.on('connect', function () {
+socket.on('connect', function() {
   console.log("Connected");
 });
-
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255);
 
   //Listen for messages named 'data' from the server
-  socket.on('data', function (obj) {
+  socket.on('data', function(obj) {
     console.log(obj);
     drawPos(obj);
   });

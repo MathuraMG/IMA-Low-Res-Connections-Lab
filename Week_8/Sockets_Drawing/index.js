@@ -18,12 +18,13 @@ let io = require('socket.io').listen(server);
 io.sockets.on('connection', function(socket) {
     console.log("We have a new client: " + socket.id);
 
-    //Listen for data from this client
+    //Listen for a message named 'data' from this client
     socket.on('data', function(data) {
         //Data can be numbers, strings, objects
         console.log("Received: 'data' " + data);
 
         //Send the data to all clients, including this one
+        //Set the name of the message to be 'data'
         io.sockets.emit('data', data);
 
         //Send the data to all other clients, not including this one

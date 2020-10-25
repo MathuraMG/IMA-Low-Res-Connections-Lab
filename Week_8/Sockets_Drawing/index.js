@@ -39,5 +39,3 @@ io.sockets.on('connection', function(socket) {
         console.log("A client has disconnected: " + socket.id);
     });
 });
-
-

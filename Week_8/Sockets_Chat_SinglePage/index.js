@@ -24,14 +24,14 @@ io.sockets.on('connection', function(socket) {
         console.log("Received a 'msg' event");
         console.log(data);
 
-        //Send the data to all clients, including this one
+        //Send a response to all clients, including this one
         io.sockets.emit('msg', data);
 
-        //Send the data to all other clients, not including this one
-        // socket.broadcast.emit('data', data);
+        //Send a response to all other clients, not including this one
+        // socket.broadcast.emit('msg', data);
 
-        //Send the data to just this client
-        // socket.emit('data', data);
+        //Send a response to just this client
+        // socket.emit('msg', data);
     });
 
     //Listen for this client to disconnect

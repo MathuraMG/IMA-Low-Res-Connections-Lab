@@ -8,13 +8,3 @@ SOCKETS - DRAWING EXAMPLE
 ### NEXT STEPS
 * Allow for changes of `ellipse` color
 * Allow for changes of `ellipse` size
-
-
-
-
-
-
-
-
-
-

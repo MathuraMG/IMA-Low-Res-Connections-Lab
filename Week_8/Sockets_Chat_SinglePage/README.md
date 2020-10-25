@@ -8,4 +8,3 @@ CHAT APP - Single Page
 ### NEXT STEPS
 * Save a user's name once at the beginning
 * Let other user's know when someone is typing
-

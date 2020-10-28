@@ -24,6 +24,9 @@ io.sockets.on('connection', function(socket) {
         console.log("Received a 'msg' event");
         console.log(data);
 
+        //update the socket object with that data
+        socket.breathCount = data.breathCount
+
         //Send a response to all clients, including this one
         io.sockets.emit('msg', data);
 
@@ -37,6 +40,12 @@ io.sockets.on('connection', function(socket) {
     //Listen for this client to disconnect
     socket.on('disconnect', function() {
         console.log("A client has disconnected: " + socket.id);
+    
+        db.insert{  name: socket.userName,
+                    totalBreaths: socket.breathCount,
+                    timestamp : Date()
+                }
+
     });
 });
 

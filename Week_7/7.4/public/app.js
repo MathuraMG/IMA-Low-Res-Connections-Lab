@@ -1,9 +1,10 @@
 window.addEventListener('load',()=> {
     document.getElementById('button-coffee').addEventListener('click', ()=> {
+        //grab the cups value
         let noCups = document.getElementById('number-coffee').value;
         console.log(noCups);
 
-        //creating the object 
+        //create the object 
         let obj = {"number" : noCups};
 
         //stringify the object
@@ -36,6 +37,19 @@ window.addEventListener('load',()=> {
                 elt.innerHTML = string;
                 document.getElementById('coffee-info').appendChild(elt);
             }
+
+            //Calculate total number of cups
+            let curData = data.data;
+            let curTotal = 0;
+            for (let i = 0; i < curData.length; i++){
+                let numCoffee = curData[i].coffee;
+                numCoffee = Number(numCoffee);
+                console.log(numCoffee);
+                if (!isNaN(numCoffee)){
+                    curTotal = curTotal + numCoffee;
+                }
+            }
+            console.log("Total Coffees: " + curTotal);
         })
     })
 })

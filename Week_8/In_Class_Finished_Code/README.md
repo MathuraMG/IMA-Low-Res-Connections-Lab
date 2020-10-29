@@ -1,5 +1,5 @@
-Socket App Development
-----------------------
+Socket Drawing App Development
+------------------------------
 
 STEP 1: Client-Side Socket Init 
 

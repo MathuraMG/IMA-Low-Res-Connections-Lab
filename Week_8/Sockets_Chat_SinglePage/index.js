@@ -40,12 +40,6 @@ io.sockets.on('connection', function(socket) {
     //Listen for this client to disconnect
     socket.on('disconnect', function() {
         console.log("A client has disconnected: " + socket.id);
-    
-        db.insert{  name: socket.userName,
-                    totalBreaths: socket.breathCount,
-                    timestamp : Date()
-                }
-
     });
 });
 

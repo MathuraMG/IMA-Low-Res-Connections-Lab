@@ -4,7 +4,7 @@ CHAT APP WITH PRIVATE ROOMS
 #### SETUP
 * Step 1 - Start with single page Chat App - run `npm install` to load node packages, run `nodemon index.js` to launch the application
 
-#### NAME SPACES
+#### NAMESPACES
 * Step 2 - Create a separate page with html and js for private chat
 
 * Step 3 -  Create a unique namespace for the private chat page 

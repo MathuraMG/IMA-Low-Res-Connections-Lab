@@ -1,5 +1,5 @@
-CHAT APP WITH ROOMS
--------------------
+CHAT APP WITH PRIVATE ROOMS
+---------------------------
 
 #### SETUP
 * Step 1 - Start with single page Chat App - run `npm install` to load node packages, run `nodemon index.js` to launch the application

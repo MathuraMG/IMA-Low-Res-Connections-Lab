@@ -18,7 +18,7 @@ CHAT APP WITH ROOMS
 
 * Step 7 - Use `.join()` to add socket to the room, the room will be created if it doesn't exist, add a “.room” property to socket
 
-* Step 8 - Add an `.emit()` on the server to send the welcome message & add an `.on()` event on the client to reveive the welcome message
+* Step 8 - Add an `.emit()` on the server to send the welcome message & add an `.on()` to the client to reveive the welcome message
 
 * Step 9 - Refactor client-side code to manage chat msgs and welcome message
 

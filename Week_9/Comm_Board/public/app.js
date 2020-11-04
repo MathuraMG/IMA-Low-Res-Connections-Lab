@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
   for(let i =0;i<rooms.length;i++){
     let button = document.createElement('button');
     button.innerHTML = rooms[i];
+    button.classList.add('option-button');
     button.addEventListener('click', () => {
       socket.emit('joinroom', {
         room: rooms[i]

@@ -7,12 +7,14 @@
     <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="options" id="options"></div>
+    <div class="options-container" id="options">
+      <h1 class="options-heading"> Pick a Room : </h1>
+    </div>
     <div id="room" class="room">
-      <div id="messages"></div>
+      <div class="messages" id="messages"></div>
       <div class="send-messages">
-        <input id="my-message" type="text" placeholder="add your message here"/>
-        <button class="button" id="send-button"> Send your message</button>
+        <button class="send-button" id="send-button"> Send your message</button>
+        <input class="send-input" id="my-message" type="text" placeholder="add your message here"/>
       </div>
     </div>
     <script type="text/javascript" src="/socket.io/socket.io.js"></script>

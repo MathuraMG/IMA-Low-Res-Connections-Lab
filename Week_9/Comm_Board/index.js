@@ -44,11 +44,14 @@ io.on('connect', (socket) => {
   socket.on('message', (data) => {
     console.log(data.message);
     //add this message to the data object
-    messages[socket.room].push(data.message);
-    //send to all other clients in this room
-    console.log(socket.room);
-    io.to(socket.room).emit('message',{
-      'message' : data.message
-    })
+    if(socket.room) {
+      messages[socket.room].push(data.message);
+      //send to all other clients in this room
+      console.log(socket.room);
+      io.to(socket.room).emit('message',{
+        'message' : data.message
+      })
+    }
+
   })
 })

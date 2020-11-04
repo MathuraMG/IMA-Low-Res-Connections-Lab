@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="options" id="options"></div>
+    <div id="room" class="room">
+      <div id="messages"></div>
+      <div class="send-messages">
+        <input id="my-message" type="text" placeholder="add your message here"/>
+        <button class="button" id="send-button"> Send your message</button>
+      </div>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

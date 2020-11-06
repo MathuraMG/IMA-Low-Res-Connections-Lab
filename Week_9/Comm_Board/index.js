@@ -30,8 +30,10 @@ let io = require('socket.io').listen(server);
 io.on('connect', (socket) => {
   console.log('socket connected : ' + socket.id);
 
+
   // on getting a choice of room to join
   socket.on('joinroom', (data) => {
+    console.log(io.sockets.adapter.sids);
     if(socket.room) {
       socket.leave(socket.room);
     }

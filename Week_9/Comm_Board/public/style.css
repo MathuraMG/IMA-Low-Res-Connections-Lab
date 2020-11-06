@@ -24,7 +24,7 @@ html {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    background: #feed93;
+    background: #d38b7d;
     align-items: center;
 }
 
@@ -41,6 +41,10 @@ html {
   cursor: pointer;
 }
 
+.option-button-selected {
+  background: #00000044;
+}
+
 .button-options:hover {
   background-color: #444444;
   color: #ffffff;
@@ -49,16 +53,18 @@ html {
 /** SEND A MESSAGE **/
 
 .send-messages {
-  display: flex;
+  display: none;
   font-size: 16px;
   width: 100%;
   justify-content: space-around;
   padding: 20px;
   position: fixed;
   bottom: 0;
-  background: #a3ed93;
+  background: #0000000d;
   width: 100%;
-
+}
+.send-messages-show {
+  display: flex;
 }
 .send-button {
   padding: 10px;
@@ -84,10 +90,19 @@ html {
   align-items: center;
   width: 100%;
   height: 100%;
+  background: #fec499;
 
 }
 .messages {
-  background: #eda393;
+
   height: 100%;
   width: 100%;
+}
+
+.message {
+  background: #0000000d;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
 }

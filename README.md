@@ -1,5 +1,18 @@
 # Connections Lab
-## Fall '20
+## About the class
+From intelligent chat-bots and gif-sharing apps to social media platforms and virtual reality hubs, our world is infused with mediated networked systems for communication. In this course, students will collaborate (at a distance) to design and develop their own creative connected web applications. By working in teams to produce online experiences that bring people together in playful yet meaningful ways, students will gain valuable insight into the inner-workings and implications of our connected world.
+
+## Course Instructors
+Craig Protzel
+Mathura Govindarajan
+
+## Reference Materials
+All the code written for this course can be found in thsi repository.
+Links to all the examples (and the live websites when applicable), can be found [on this index website.](https://mathuramg.com/IMA-Low-Res-Connections-Lab/)
+
+This content was taught as part of the IMA Low Res Pogram, 2020-21 in the Fall semester, as part of the Connections Lab class.
+
+<!-- 
 
 [Week 1 - Intro to HTML & CSS](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML)
 * [HTML Boilerplate](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML/HTML%20Boilerplate)
@@ -31,4 +44,4 @@
 * [Pokemon Example](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_04|JSON_Fetch/4.2_Get_JSON_with_AJAX)
 
 [Week 5 - JSON to p5](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_05|JSON_with_p5)
-* [JSON to p5 with Fetch](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_05|JSON_with_p5/5.5_JSON%20to%20p5%20with%20Fetch)
+* [JSON to p5 with Fetch](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_05|JSON_with_p5/5.5_JSON%20to%20p5%20with%20Fetch) -->

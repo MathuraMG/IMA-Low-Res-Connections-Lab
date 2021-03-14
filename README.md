@@ -1,20 +1,26 @@
 # Connections Lab
-## About the class
+
+## Course Description
 From intelligent chat-bots and gif-sharing apps to social media platforms and virtual reality hubs, our world is infused with mediated networked systems for communication. In this course, students will collaborate (at a distance) to design and develop their own creative connected web applications. By working in teams to produce online experiences that bring people together in playful yet meaningful ways, students will gain valuable insight into the inner-workings and implications of our connected world.
 
 ## Course Instructors
-Craig Protzel
-Mathura Govindarajan
+* Mathura Govindarajan (mathura.mg@nyu.edu)
+* Craig Protzel (craig.protzel@nyu.edu)
+
+## Course Structure
+* Module 1 (Weeks 1 - 5) - Talking to the Web: In this module, we will cover the fundamentals of client-side web development and we will explore how to use data from the web to produce creative stories and user interactions.
+* Module 2 (Weeks 5 - 10) - Talking to Each Other: In this module, we will cover the fundamentals of server-side web development with a focus on technologies that allow for real-time multi-person communication and participatory experiences.
+* Module 3 (Weeks 11 - 15) - Talking++ (Stop Talking, Start Listening): In this module, we will focus on project building, play-testing, and user experience all directed towards a final project. We will also provide multiple curricular branches and directions to choose from that will allow you to explore how to interface with additional libraries, media and tools.
 
 ## Reference Materials
-All the code written for this course can be found in thsi repository.
-Links to all the examples (and the live websites when applicable), can be found [on this index website.](https://mathuramg.com/IMA-Low-Res-Connections-Lab/)
+* All the code written for this course can be found within this repository.
+* Links to all the examples (and the live websites when applicable), can be found [on this index website.](https://mathuramg.com/IMA-Low-Res-Connections-Lab/)
 
 This content was taught as part of the IMA Low Res Pogram, 2020-21 in the Fall semester, as part of the Connections Lab class.
 
 <!-- 
 
-[Week 1 - Intro to HTML & CSS](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML)
+[Week 1 - Intro to HTML & CSS](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML)  
 * [HTML Boilerplate](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML/HTML%20Boilerplate)
 * [Simple Webpage on Cats](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_01|Intro_to_HTML/Simple_Cat_Page)
 

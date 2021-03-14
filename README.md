@@ -8,15 +8,14 @@ From intelligent chat-bots and gif-sharing apps to social media platforms and vi
 * Craig Protzel (craig.protzel@nyu.edu)
 
 ## Course Structure
-* Module 1 (Weeks 1 - 5) - Talking to the Web: In this module, we will cover the fundamentals of client-side web development and we will explore how to use data from the web to produce creative stories and user interactions.
-* Module 2 (Weeks 5 - 10) - Talking to Each Other: In this module, we will cover the fundamentals of server-side web development with a focus on technologies that allow for real-time multi-person communication and participatory experiences.
-* Module 3 (Weeks 11 - 15) - Talking++ (Stop Talking, Start Listening): In this module, we will focus on project building, play-testing, and user experience all directed towards a final project. We will also provide multiple curricular branches and directions to choose from that will allow you to explore how to interface with additional libraries, media and tools.
+* **Module 1 (Weeks 1 - 5)** - Talking to the Web: In this module, we will cover the fundamentals of client-side web development and we will explore how to use data from the web to produce creative stories and user interactions.
+* **Module 2 (Weeks 5 - 10)** - Talking to Each Other: In this module, we will cover the fundamentals of server-side web development with a focus on technologies that allow for real-time multi-person communication and participatory experiences.
+* **Module 3 (Weeks 11 - 15)** - Talking++ (Stop Talking, Start Listening): In this module, we will focus on project building, play-testing, and user experience all directed towards a final project. We will also provide multiple curricular branches and directions to choose from that will allow you to explore how to interface with additional libraries, media and tools.
 
 ## Reference Materials
 * All the code written for this course can be found within this repository.
 * Links to all the examples (and the live websites when applicable), can be found [on this index website.](https://mathuramg.com/IMA-Low-Res-Connections-Lab/)
-
-This content was taught as part of the IMA Low Res Pogram, 2020-21 in the Fall semester, as part of the Connections Lab class.
+* This content was taught as part of the [IMA Low Res Pogram](https://itp.nyu.edu/lowres/) 2020-21 in the Fall semester, as part of the Connections Lab class.
 
 <!-- 
 

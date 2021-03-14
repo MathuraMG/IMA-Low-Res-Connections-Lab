@@ -1,5 +1,5 @@
 # Connections Lab
-The contents of this repo were taught as part of the "Connections Lab" class which ran in the NYU [IMA Low Res Pogram](https://itp.nyu.edu/lowres/) 2020-21 Fall semester.
+The contents of this repo are used in service of a course titled "Connections Lab" class which ran in the NYU's Master of Arts [IMA Low Res Pogram](https://itp.nyu.edu/lowres/) 2020-21 Fall semester.
 
 ## Course Description
 From intelligent chat-bots and gif-sharing apps to social media platforms and virtual reality hubs, our world is infused with mediated networked systems for communication. In this course, students will collaborate (at a distance) to design and develop their own creative connected web applications. By working in teams to produce online experiences that bring people together in playful yet meaningful ways, students will gain valuable insight into the inner-workings and implications of our connected world.

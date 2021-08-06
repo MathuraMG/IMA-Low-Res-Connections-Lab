@@ -1,0 +1,35 @@
+body {
+    padding: 20px;
+    background-color: #fffbe4;
+    background-image: url('https://placekitten.com/200/200');
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+}
+
+.project__section-desc {
+    background-color: #fffbe488;
+    border-radius: 30px;
+}
+.project__section {
+    width: 100%;
+    margin: 40px 0;
+    
+}
+
+.project__heading {
+    color: red;
+}
+
+.project__desc {
+    width: 49%;
+    display: inline-block;
+    margin: 0;
+}
+
+.project__video {
+    width: 50%;
+}
+
+.project__image {
+    width: 32%;
+}

@@ -1,0 +1,53 @@
+html,body{
+	font-size: 24px;
+	font-family: 'Arial';
+	margin: 0;
+	padding: 0;
+}
+
+/* ----- Container-Header Styling ----- */
+h1{
+	text-align: center;
+}
+.container-buttons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.nav-button{
+	width: 20%;
+	max-width: 200px;
+	height: 42px;
+	font-size: 0.6em;
+	margin: 0 5%; 
+	background-color: rgb(157,180,255);
+}
+.nav-button:hover{
+	background-color: rgb(0,45,195);
+	color: white;	
+}
+
+/* ----- Container-Main Styline ----- */
+.container-main{
+	max-width: 1080px;
+	width: 90%;
+	margin: 0 auto; 
+}
+.content{
+	display: none;
+	margin-top: 40px;
+	font-size: 0.75em;
+}
+p{	
+	text-align: center;
+}
+img,iframe{
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+ol{
+	width: 75%;
+	margin: 0 auto;
+	font-size: 0.75em;
+}

@@ -7,6 +7,7 @@ From intelligent chat-bots and gif-sharing apps to social media platforms and vi
 ## Course Instructors
 * Mathura Govindarajan (mathura.mg@nyu.edu)
 * Craig Protzel (craig.protzel@nyu.edu)
+* Ruta Kruliauskaite (ruta@nyu.edu)
 
 ## Course Structure
 * **Module 1 - Talking to the Web:** In this module, we will cover the fundamentals of client-side web development and we will explore how to use data from the web to produce creative stories and user interactions.

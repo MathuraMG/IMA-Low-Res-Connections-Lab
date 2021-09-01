@@ -10,7 +10,8 @@ let helloList = [
   "Xin chao",
   "Jambo",
   "Zdravstvuyte",
-  "Ni hao"
+  "Ni hao",
+  "Labas"
 ];
 
 //Declare and initialize a counter

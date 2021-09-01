@@ -20,13 +20,13 @@ colourButton = document.getElementById('button-colour');
 colourButton.addEventListener('click', function(){
     document.body.style.background = bgColours[choice];
     choice = (choice+1)%3;
-})
+});
 
 
 //check for scrolling on the window
 window.addEventListener('scroll', function(){
     // console.log(window.scrollY);
     document.body.style.background = "hsl(" + window.scrollY%360 + ",50%,50%)";
-})
+});
 
 

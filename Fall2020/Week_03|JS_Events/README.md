@@ -1,11 +1,11 @@
 In this section, we will look in javascript events such as button click, mouse click, and mouse scroll. We will also learn more about the JQuery library
 <li>
-                <a href="https://mathuramg.com/IMA-Low-Res-Connections-Lab/Fall2020/Week_03|JS_Events/3.1_JS_DOM/index.html"
+                <a href="https://mathuramg.com/IMA-Low-Res-Connections-Lab/Fall2020/Week_03|JS_Events/3.1_JS_DOM_Inspector/index.html"
                     target="_blank">
                     Javascript and the DOM
                 </a>
                 |
-                <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Fall2020/Week_03|JS_Events/3.1_JS_DOM"
+                <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Fall2020/Week_03|JS_Events/3.1_JS_DOM_Inspector"
                     target="_blank">
                     Code
                 </a>

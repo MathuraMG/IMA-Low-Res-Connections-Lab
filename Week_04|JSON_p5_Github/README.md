@@ -35,7 +35,7 @@ This section looks at how we can combine the data that we get from the web with 
 <li>
     <a href="http://mathuramg.com/IMA-Low-Res-Connections-Lab/Week_04%7CJSON_p5_Github/p5_Canvas_Background/index.html"
         target="_blank">
-        Adding p5 canvas in a div
+        Adding p5 canvas as a background
     </a>
     |
     <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_04%7CJSON_p5_Github/p5_Canvas_Background"

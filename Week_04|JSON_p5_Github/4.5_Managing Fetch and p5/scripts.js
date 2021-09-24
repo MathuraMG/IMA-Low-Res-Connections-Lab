@@ -28,7 +28,7 @@ function setup(){
 function draw(){
 
     if (dataIsReady){
-        prepData();    
+        prepData();
     }
 
     if (animationIsReady){
@@ -47,7 +47,7 @@ function prepData(){
     dataIsReady = false;
     //Flip second boolean value to true
     console.log("Flipping second boolean value to true");
-    animateData = true;    
+    animationIsReady = true;
 }
 
 //This will be called repeatedly in draw()

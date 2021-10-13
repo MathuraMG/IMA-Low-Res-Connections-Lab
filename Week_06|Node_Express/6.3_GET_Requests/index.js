@@ -49,6 +49,12 @@ app.get('/signs/:sign', (req,res)=> {
     }
 })
 
+app.get('/test', (req,res) => {
+    // console.log(req)
+    console.log(req.query.a)
+    res.send('hello')
+})
+
 app.listen(3000, ()=> {
     console.log("listening at localhost:3000");
 })

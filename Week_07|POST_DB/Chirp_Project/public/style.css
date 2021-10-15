@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header{
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.chirp-input {
+    width: 50%;
+    padding: 10px;
+    margin: 20px;
+}

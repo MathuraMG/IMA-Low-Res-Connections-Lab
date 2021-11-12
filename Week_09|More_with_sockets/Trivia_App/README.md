@@ -10,28 +10,28 @@ io = new io.Server(server);`
 
 # STEPS - Setup the required files/ folders/ connections
 
-1. DONE | Setup the express server with a public folder
+1. Setup the express server with a public folder
 
-2. DONE | Create multiple views within the public folder
+2. Create multiple views within the public folder
 
-3. DONE | Setup multiple namespaces in the server side - one for "input", and one for "output"
+3. Setup multiple namespaces in the server side - one for "input", and one for "output"
 
 
 # STEPS - Send information across the socket
 
-1. DONE | Get question button
-* DONE | sending a "ping" from the output client to the server
-* DONE | server sends back question + answer to the output client
-* DONE | server sends back question + options to the input clients
+1. Get question button
+* sending a "ping" from the output client to the server
+* server sends back question + answer to the output client
+* server sends back question + options to the input clients
 
-2. DONE | What happens when user selects answer
-* DONE | user selects answer, send the answer to server
-* DONE | server will check if answer is correct, and let the client know
+2. What happens when user selects answer
+* user selects answer, send the answer to server
+* server will check if answer is correct, and let the client know
 * input client needs to be informed if answer is right or wrong
 
 3. Get answer button
-* DONE | output client emits a ping on button press
-* DONE | server gets the ping, and send "answer" info to the output clients
+* output client emits a ping on button press
+* server gets the ping, and send "answer" info to the output clients
 * output clients displays this informations
 
 # NEXT STEPS

@@ -4,3 +4,6 @@
 3. Decide which of the peers is an initiator
 4. Establish data connection
 5. Send some data (on 'connect')
+
+# NEXT STEPS
+1. Add video stream (on 'stream')

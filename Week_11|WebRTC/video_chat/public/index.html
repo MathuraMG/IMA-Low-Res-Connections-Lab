@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Video chat app with Simple Peer</title>
+</head>
+<body>
+  <h1>Video chat app</h1>
+  <div>
+    <section>
+      <h2>My video</h2>
+      <video id="myVideo" width="320" height="240" muted></video>
+    </section>
+    <section>
+      <h2>Friends' video</h2>
+    </section>
+  </div>
+  <script src="libraries/simplepeer.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

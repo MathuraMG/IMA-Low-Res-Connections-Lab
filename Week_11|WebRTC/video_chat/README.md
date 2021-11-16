@@ -7,7 +7,7 @@
 
 ### Specific Steps (see more details in the code comments)
 #### Server-side
-1. Create a secure https node server:
+1. Create a secure https node server
 2. Create a 'peers' object to store the ids of available peers
 3. Create a websocket server to pass signaling messages
 

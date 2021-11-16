@@ -42,7 +42,7 @@ function initCapture() {
 
 /*Step 6. Establish socket connection*/
 function setupSocket() {
-  /*STEP 6.1. Set to global object variable */
+  /*STEP 6.1. Set to global object variable*/
   socket = io();
 
   socket.on('connect', () => {
@@ -53,16 +53,16 @@ function setupSocket() {
     socket.emit('list');
   });
 
-  /*STEP 6.4. Receive a list of all socket ids */
+  /*STEP 6.4. Receive a list of all socket ids*/
   socket.on('listresults', data => {
     //array of socket ids
     console.log(data);
     //6.4.1. Loop through all ids
     for (let i = 0; i < data.length; i++) {
-      //6.4.2. Check if my id is not one of them - meaning I don't have connection with these peers yet
+      //6.4.2. Make sure the id is not my own id
       if (data[i] != socket.id) {
         let theirSocketId = data[i];
-        //call all peer connections (the last one to join is an initiator to call everyone else on the call)
+        //call all peer connections (since we are have just joined, we will be the initiator to connect with everyone else on the call)
         let peerConnection = setupConnection(true, theirSocketId);
         //6.4.3. Add to global peer connections object
         myFriends[data[i]] = peerConnection;
@@ -70,7 +70,7 @@ function setupSocket() {
     }
   });
 
-  /*STEP 7.4. Receive signal or setup a new peer connection */
+  /*STEP 7.4. Receive signal or setup a new peer connection*/
   socket.on('signal', (to, from, data) => {
     console.log('Got a signal from the server: ', to, from, data);
     //'to' should be us
@@ -91,7 +91,8 @@ function setupSocket() {
       let peerConnection = setupConnection(false, theirSocketId);
       //add new connection to a global 'peers' object
       myFriends[from] = peerConnection;
-      //tell the new simplepeer that signal
+      //attempt to establish a connection with the new peer that sent the initial signal
+      console.log("Connecting to a new peer!");
       peerConnection.signal(data);
     }
   });
@@ -104,6 +105,7 @@ function setupConnection(initiator, theirSocketId) {
 
   /*STEP 7.2. Simplepeer generates signals which need to be sent across socket connection*/
   peerConnection.on('signal', data => {
+    //Emit a signal event to the server
     socket.emit('signal', theirSocketId, socket.id, data);
   });
 
@@ -114,7 +116,6 @@ function setupConnection(initiator, theirSocketId) {
 
     //Let's give them our stream - add to the peer connection
     peerConnection.addStream(myLocalMediaStream);
-
     console.log('Send our stream');
   });
 
@@ -145,6 +146,6 @@ function setupConnection(initiator, theirSocketId) {
     console.log(err);
   });
 
-  /*STEP 7.7. Return peer connection to be able to use it elsewhere*/
+  /*STEP 7.7. Return peer connection to be able to use it elsewhere in STEP 6.4.3*/
   return peerConnection;
 }

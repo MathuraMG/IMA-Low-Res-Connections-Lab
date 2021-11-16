@@ -3,6 +3,9 @@ let express = require('express');
 let app = express();
 app.use('/', express.static('public'));
 
+/*Step 1.2. Generate security certificates in the command line*/
+/* Note, this is not necessary if deploying to Glitch*/
+
 /*Step 1.3. Get access to the file system*/
 let fs = require('fs');
 
@@ -39,13 +42,13 @@ io.sockets.on('connection', (socket) => {
     let ids = Object.keys(peers);
     console.log(ids);
 
-    //send all ids to this specific socket
+    //send all existing socket ids to this specific socket
     socket.emit('listresults', ids);
   });
 
   /*STEP 7.3. Relay signals back and forth*/
   socket.on('signal', (to, from, data) => {
-    console.log('signal', to, data);
+    console.log('signal', to);
 
     //check if such peer exists in a 'peers' object
     if(to in peers){

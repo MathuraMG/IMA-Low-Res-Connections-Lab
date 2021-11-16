@@ -1,4 +1,4 @@
-**NOTE** In a real-world application, you would NEVER do this. The sender and receiver Peer instances would exist in separate browsers. A "signaling server" (usually implemented with websockets) would be used to exchange signaling data between the two browsers until a peer-to-peer connection is established.
+**NOTE:** In a real-world application, you would **NEVER** do this. The sender and receiver Peer instances would exist in separate browsers. A "signaling server" (usually implemented with websockets) would be used to exchange signaling data between the two browsers until a peer-to-peer connection is established.
 
 # CODING STEPS
 ### Setup SimplePeer Client-side

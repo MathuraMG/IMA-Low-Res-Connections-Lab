@@ -1,0 +1,39 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  background: #fffffa;
+}
+
+.banner {
+  width: 100%;
+  height:20%;
+  background-image: url("./assets/lowres_banner.jpg");
+}
+
+.list, .desc {
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+  /* margin: 2rem; */
+}
+
+.container {
+  margin: 0 2rem;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #1ba697;
+}
+
+.list-item {
+  margin: 0.5rem 0;
+}

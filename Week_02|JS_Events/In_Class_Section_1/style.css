@@ -1,0 +1,12 @@
+body {
+  background-color: palevioletred;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter-result {
+  font-size: 36px;
+  text-align: center;
+}
+

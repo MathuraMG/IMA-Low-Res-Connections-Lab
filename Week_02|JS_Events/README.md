@@ -55,6 +55,7 @@ In this section, we will look into javascript events such as button click, mouse
                 </a>
             </li>
             
+</br>
 In-Class examples:
 <li>
                 <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_02%7CJS_Events/In_Class/Section_2_Counter"

@@ -1,0 +1,16 @@
+body{
+  background-color: chocolate;
+  color: aliceblue;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.project_heading{
+  text-align:center;
+}

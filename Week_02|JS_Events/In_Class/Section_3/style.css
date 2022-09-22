@@ -1,0 +1,17 @@
+html,body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.number-container{
+    text-align: center;
+    font-size: 64px;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+}

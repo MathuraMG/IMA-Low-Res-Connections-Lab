@@ -56,8 +56,12 @@ In this section, we will look in javascript events such as button click, mouse c
     </a>
 </li>
 </ul>
+<<<<<<< HEAD
 
+=======
+>>>>>>> a113b7ddfd565dea0fcd42fb9c4b26124a202201
 Here is the in class code by section
+<ul>
 <li>
     <a href="https://mathuramg.com/IMA-Low-Res-Connections-Lab/Week_02|JS_Events/In_Class_Section_1/index.html"
         target="_blank">
@@ -76,3 +80,10 @@ Here is the in class code by section
         Section 2
     </a>
 </li>
+<li>
+    <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_02%7CJS_Events/In_Class/Section_3"
+        target="_blank">
+        Section 3
+    </a>
+</li>
+</ul>

@@ -1,4 +1,5 @@
 In this section, we will look in javascript events such as button click, mouse click, and mouse scroll.
+<ul>
 <li>
     <a href="https://mathuramg.com/IMA-Low-Res-Connections-Lab/Week_02|JS_Events/2.1_JS_DOM_Inspector/index.html"
         target="_blank">
@@ -54,6 +55,7 @@ In this section, we will look in javascript events such as button click, mouse c
         Code
     </a>
 </li>
+</ul>
 
 Here is the in class code by section
 <li>

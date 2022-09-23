@@ -1,0 +1,9 @@
+#### In-Class Example
+
+##### Rock & Roll Hall of Fame JSON + Bonus Wikipedia API Request
+
+The CORS (Cross-Origin Resource Sharing) issue we saw during class happened when we tried to request data from the Wikipedia API. Because of a settings change on the server of this API, requests from outside clients is no longer allowed. Once we incorporate our own server into our applications which we'll do in Module 2 of the course, we can make the request from our server to the Wikipedia API no problem. As a general rule, servers are happy talking to other servers (or their own client), but servers don't always play nice with other clients, which is what we are considered. 
+
+A temporary fix for this issue is to use a "CORS Anywhere" service that will act as a proxy to facilitate the request for you. A request is be made to the "Cors Anywhere" server via the appropriate url (i.e. 'https://cors-anywhere.herokuapp.com/'). Their server will then  make the request to Wikipedia on our behalf, they will receive the data and then send it to us. It's kind of like a placing a food delivery order via a delivery service - they communicate your order to the restaurant, pick up your food and delivers it to you! 
+
+To run this example, you do need to go to the Cors Anywhere Demo Page and request click the button requesting temporary access - 'https://cors-anywhere.herokuapp.com/corsdemo'.

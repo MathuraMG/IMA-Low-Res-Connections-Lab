@@ -1,0 +1,7 @@
+body {
+  background-color: bisque;
+}
+
+.container {
+  display: flex;
+}

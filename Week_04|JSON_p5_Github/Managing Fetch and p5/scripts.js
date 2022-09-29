@@ -41,6 +41,7 @@ function prepData(){
     console.log("Preparing the data");
 
     //Add logic here to parse/organize the data
+    //If you have a "Class", this could be a good place to initialize objects
 
     //Flip first boolean value back to false
     console.log("Flipping first boolean value back to false");

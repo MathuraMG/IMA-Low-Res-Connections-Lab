@@ -7,7 +7,7 @@
 3) Display all chirps on the page
 
 ### Development Steps 
-(starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_7/Chirp_InClass_Example_START))
+(starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_07%7CPOST_DB/Chirp_In_Class_START))
 
 ##### Guiding thought - "Follow the data"
 

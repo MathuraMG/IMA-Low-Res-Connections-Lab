@@ -39,7 +39,7 @@
 - Save the data to a database
 - Use the `.insert()` method
 
-#### Step 7 -
+#### Step 7:
 - Send a json response to the client js
 - Need to create an object that communicates "success"
 
@@ -49,7 +49,7 @@
 - On the client js, receive the response from the server js
 - Add the user's message to the top of the page using `insertBefore()` method
 
-#### Step 9 -
+#### Step 9:
 - Display all chirps on the page in the Feed
 - Need to add a `fetch()` request on page load
 - This should be a **GET** request to the server js

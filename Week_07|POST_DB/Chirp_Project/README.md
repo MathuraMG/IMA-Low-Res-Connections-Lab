@@ -22,7 +22,7 @@
 - This includes name, chirp, and possibly date
 
 #### Step 3:
-- Make sure our data is in JSON form
+- Make sure our data is in **JSON** form
 - Need to use `JSON.stringify()`
 
 #### Step 4: 
@@ -34,14 +34,14 @@
 #### Step 5:
 - Setup a route for the data to arrive on the server
 - This will be an `app.post()` route that can parse the JSON data
-- Also make sure the server can parse JSON with `app.use` code
+- Also make sure the server can parse **JSON** with `app.use` code
 
 #### Step 6:
 - Save the data to a database
 - Use the `.insert()` method
 
 #### Step 7:
-- Send a json response to the client js
+- Send a **JSON** response to the client js
 - Need to create an object that communicates "success"
 
 ### CLIENT-SIDE CODE
@@ -63,8 +63,8 @@
 - Use the `.find({})` method to query all the objects in the database
 
 #### Step 11:
-- Send a json repsonse to the client
-- The json will include all of the stored objects
+- Send a **JSON** repsonse to the client
+- The **JSON** will include all of the stored objects
 
 ### CLIENT-SIDE CODE
 

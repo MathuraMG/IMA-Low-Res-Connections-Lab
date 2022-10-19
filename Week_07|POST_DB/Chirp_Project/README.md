@@ -34,6 +34,7 @@
 #### Step 5:
 - Setup a route for the data to arrive on the server
 - This will be an `app.post()` route that can parse the JSON data
+- Also make sure the server can parse JSON with `app.use` code
 
 #### Step 6:
 - Save the data to a database

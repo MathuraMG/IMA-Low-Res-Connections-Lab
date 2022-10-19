@@ -23,21 +23,21 @@
 
 #### Step 3:
 - Make sure our data is in JSON form
-- Need to use JSON.stringify()
+- Need to use `JSON.stringify()`
 
 #### Step 4: 
-- Send the data to the server using fetch()
-- Need to configure fetch() to be a POST request using an object as the second fetch parameter
+- Send the data to the server using `fetch()`
+- Need to configure `fetch()` to be a **POST** request using an object as the second fetch parameter
 
 ### SERVER-SIDE CODE
 
 #### Step 5:
 - Setup a route for the data to arrive on the server
-- This will an app.post() route that can parse the JSON data
+- This will be an `app.post()` route that can parse the JSON data
 
 #### Step 6:
 - Save the data to a database
-- Use the .insert() method
+- Use the `.insert()` method
 
 #### Step 7 -
 - Send a json response to the client js
@@ -47,19 +47,19 @@
 
 #### Step 8
 - On the client js, receive the response from the server js
-- Add the user's message to the top of the page using insertBefore() method
+- Add the user's message to the top of the page using `insertBefore()` method
 
 #### Step 9 -
 - Display all chirps on the page in the Feed
-- Need to add a fetch() request on page load
-- This should be a GET request to the server js
+- Need to add a `fetch()` request on page load
+- This should be a **GET** request to the server js
 
 ### SERVER-SIDE CODE
 
 #### Step 10:
-- Create a route on the server js to receive a GET request for all of the data
-- This will be an app.get() route
-- Use the .find({}) method to query all the objects in the database
+- Create a route on the server js to receive a **GET** request for all of the data
+- This will be an `app.get()` route
+- Use the `.find({})` method to query all the objects in the database
 
 #### Step 11:
 - Send a json repsonse to the client
@@ -72,5 +72,5 @@
 - Save the data, sort/filter as necessary, loop through it and add it to the page
 
 #### Additional Steps
-- Client: Make sure the chirps appear in on the page starting with the most recent chirp at the top
+- Client: Make sure the chirps appear on the page starting with the most recent chirp at the top
 - Server: Create a route that returns chirps by a specific user name

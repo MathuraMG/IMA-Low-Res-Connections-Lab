@@ -12,7 +12,6 @@ window.addEventListener('load', function () {
             let randomQuote = quotes[randomNum].quote;
             console.log(randomQuote);
             document.getElementById("random-quote").innerText = '"' + randomQuote + '"';
-
     });
 
     //Setup event listener on button
@@ -52,5 +51,4 @@ window.addEventListener('load', function () {
                 //Update the page
             });
     });
-
 });

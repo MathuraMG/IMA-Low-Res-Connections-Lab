@@ -40,7 +40,6 @@ app.get('/data', (request, response) => {
         //Send a response back to the client
         response.json(allQuotes);
     });
-
 });
 
 app.listen(3000, () => {

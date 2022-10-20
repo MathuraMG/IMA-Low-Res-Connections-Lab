@@ -7,7 +7,7 @@
 3) Display all chirps on the page
 
 ### Development Steps 
-(starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_7/Chirp_InClass_Example_START))
+(starting with the [boilerplate code](https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_07%7CPOST_DB/Chirp_In_Class_START))
 
 ##### Guiding thought - "Follow the data"
 
@@ -22,48 +22,49 @@
 - This includes name, chirp, and possibly date
 
 #### Step 3:
-- Make sure our data is in JSON form
-- Need to use JSON.stringify()
+- Make sure our data is in **JSON** form
+- Need to use `JSON.stringify()`
 
 #### Step 4: 
-- Send the data to the server using fetch()
-- Need to configure fetch() to be a POST request using an object as the second fetch parameter
+- Send the data to the server using `fetch()`
+- Need to configure `fetch()` to be a **POST** request using an object as the second fetch parameter
 
 ### SERVER-SIDE CODE
 
 #### Step 5:
 - Setup a route for the data to arrive on the server
-- This will an app.post() route that can parse the JSON data
+- This will be an `app.post()` route that can parse the JSON data
+- Also make sure the server can parse **JSON** with `app.use` code
 
 #### Step 6:
 - Save the data to a database
-- Use the .insert() method
+- Use the `.insert()` method
 
-#### Step 7 -
-- Send a json response to the client js
+#### Step 7:
+- Send a **JSON** response to the client js
 - Need to create an object that communicates "success"
 
 ### CLIENT-SIDE CODE
 
 #### Step 8
 - On the client js, receive the response from the server js
-- Add the user's message to the top of the page using insertBefore() method
+- Add the user's message to the top of the page using `insertBefore()` method
 
-#### Step 9 -
+#### Step 9:
 - Display all chirps on the page in the Feed
-- Need to add a fetch() request on page load
-- This should be a GET request to the server js
+- Need to add a `fetch()` request on page load
+- This should be a **GET** request to the server js
 
 ### SERVER-SIDE CODE
 
 #### Step 10:
-- Create a route on the server js to receive a GET request for all of the data
-- This will be an app.get() route
-- Use the .find({}) method to query all the objects in the database
+- Create a route on the server js to receive a **GET** request for all of the data
+- This will be an `app.get()` route
+- Use the `.find({})` method to query all the objects in the database
 
 #### Step 11:
-- Send a json repsonse to the client
-- The json will include all of the stored objects
+- Send a **JSON** repsonse to the client
+- The **JSON** will include all of the stored objects
 
 ### CLIENT-SIDE CODE
 
@@ -72,5 +73,5 @@
 - Save the data, sort/filter as necessary, loop through it and add it to the page
 
 #### Additional Steps
-- Client: Make sure the chirps appear in on the page starting with the most recent chirp at the top
+- Client: Make sure the chirps appear on the page starting with the most recent chirp at the top
 - Server: Create a route that returns chirps by a specific user name

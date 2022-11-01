@@ -19,8 +19,7 @@ socket.on('data', (data)=>{
 });
 
 //STEP 10.4 CHANGE COLOR ON MOUSE CLICK
-socket.on('colorChange', (data) => {
-  console.log(data.msg);
+socket.on('colorChange', () => {
   r = random(255);
   g = random(255);
   b = random (255);
@@ -62,5 +61,5 @@ function drawObj(obj){
 //STEP 10.1 Change color on mouse click
 function mousePressed(){
   //send a message to the server that something happened
-  socket.emit('colorChange', {msg: "Change color"});
+  socket.emit('colorChange');
 }

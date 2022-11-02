@@ -35,7 +35,7 @@ function createOptionButtons() {
       button.classList.add("button-options");
       
       // when user selects answer
-      button.onclick = function() {
+      button.onclick = () => {
           if(isAnswered == false) { 
               socket.emit('answer', {answer: i})
               isAnswered = true;

@@ -1,11 +1,11 @@
 let chatBox;
 
-window.addEventListener('load', function () {
+window.addEventListener('load', () => {
 
     //Open and connect socket to private namespace
     let socket = io('/private');
     //Listen for confirmation of connection
-    socket.on('connect', function () {
+    socket.on('connect', () => {
         console.log("Connected");
     });
 
@@ -28,7 +28,7 @@ window.addEventListener('load', function () {
     chatBox = document.getElementById('chat-box-msgs');
 
     //Listen for the 'joined' msg from the server
-    socket.on('joined', function (data) {
+    socket.on('joined', (data) => {
         console.log("A new user has joined the chat!");
         console.log(data);
         //Set a boolean to manage if this is a welcome msg
@@ -37,7 +37,7 @@ window.addEventListener('load', function () {
     });
 
     //Listen for messages named 'msg' from the server
-    socket.on('msg', function (data) {
+    socket.on('msg', (data) => {
         console.log("Message arrived!");
         console.log(data);
         addMsgToPage(data);
@@ -48,7 +48,7 @@ window.addEventListener('load', function () {
     let msgInput = document.getElementById('msg-input');
     let sendButton = document.getElementById('send-button');
 
-    sendButton.addEventListener('click', function () {
+    sendButton.addEventListener('click', () => {
         let curName = nameInput.value;
         let curMsg = msgInput.value;
         let msgObj = { "name": curName, "msg": curMsg };

@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
       //some styling
       let buttons = document.getElementsByClassName('option-button');
-      [].forEach.call(buttons, function(button) {
+      [].forEach.call(buttons, (button) => {
         console.log(button);
           button.classList.remove("option-button-selected");
       });

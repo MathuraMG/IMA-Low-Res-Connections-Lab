@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
     //Open and connect socket
     let socket = io();
     //Listen for confirmation of connection
-    socket.on('connect', function () {
+    socket.on('connect', () => {
         console.log("Connected");
     });
 
@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     chatBox = document.getElementById('chat-box-msgs');
 
     //Listen for messages named 'msg' from the server
-    socket.on('msg', function (data) {
+    socket.on('msg',  (data) => {
         console.log("Message arrived!");
         console.log(data);
         addMsgToPage(data);
@@ -24,7 +24,7 @@ window.addEventListener('load', function () {
     let msgInput = document.getElementById('msg-input');
     let sendButton = document.getElementById('send-button');
 
-    sendButton.addEventListener('click', function () {
+    sendButton.addEventListener('click', () => {
         let curName = nameInput.value;
         let curMsg = msgInput.value;
         let msgObj = { "name": curName, "msg": curMsg };

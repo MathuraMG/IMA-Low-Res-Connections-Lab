@@ -20,11 +20,11 @@ io = new io.Server(server);
 let private = io.of('/private');
 
 //Listen for users connecting to main page
-io.sockets.on('connection', function(socket) {
+io.sockets.on('connection', (socket) => {
     console.log("We have a new client: " + socket.id);
 
     //Listen for a message named 'msg' from this client
-    socket.on('msg', function(data) {
+    socket.on('msg', (data) => {
         //Data can be numbers, strings, objects
         console.log("Received a 'msg' event");
         console.log(data);
@@ -34,16 +34,16 @@ io.sockets.on('connection', function(socket) {
     });
 
     //Listen for this client to disconnect
-    socket.on('disconnect', function() {
+    socket.on('disconnect', () => {
         console.log("A client has disconnected: " + socket.id);
     });
 });
 
 //Listen for users connecting to private page
-private.on('connection', function(socket){
+private.on('connection', (socket) => {
     console.log("We have a new private client: " + socket.id);
 
-    socket.on('room', function(data){
+    socket.on('room', (data) => {
         let roomName = data.room;
         console.log("Create/Join Room: " + roomName);
         //Add this socket to the room
@@ -56,7 +56,7 @@ private.on('connection', function(socket){
     });
 
     //Listen for a message named 'msg' from this client
-    socket.on('msg', function(data) {
+    socket.on('msg', (data) => {
         //Data can be numbers, strings, objects
         console.log("Received a 'msg' event");
         console.log(data);
@@ -67,7 +67,7 @@ private.on('connection', function(socket){
     });
 
     //Listen for this client to disconnect
-    socket.on('disconnect', function() {
+    socket.on('disconnect', () => {
         console.log("A client has disconnected: " + socket.id);
     });
 });

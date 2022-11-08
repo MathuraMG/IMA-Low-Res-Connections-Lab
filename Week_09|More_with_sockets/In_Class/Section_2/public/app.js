@@ -6,12 +6,12 @@ let b;
 let size;
 
 //Connect socket client
-socket.on('connect', () =>{
+socket.on('connect', () => {
   console.log('Connected');
 });
 
 //STEP 8. Listen for data from the server
-socket.on('data', (data)=>{
+socket.on('data', (data) => {
   console.log(data);
 
   //draw with data coming in
@@ -22,12 +22,12 @@ socket.on('data', (data)=>{
 socket.on('colorChange', () => {
   r = random(255);
   g = random(255);
-  b = random (255);
+  b = random(255);
   size = random(50);
 });
 
 //STEP 1. p5 code
-function setup(){
+function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255);
 
@@ -38,7 +38,7 @@ function setup(){
   size = random(50);
 }
 
-function mouseMoved(){
+function mouseMoved() {
   let mousePos = {
     x: mouseX,
     y: mouseY,
@@ -52,14 +52,14 @@ function mouseMoved(){
   socket.emit('data', mousePos);
 }
 
-function drawObj(obj){
+function drawObj(obj) {
   noStroke();
   fill(obj.r, obj.g, obj.b);
   ellipse(obj.x, obj.y, obj.size);
 }
 
 //STEP 10.1 Change color on mouse click
-function mousePressed(){
-  //send a message to the server that something happened
+function mousePressed() {
+  //send a ping to the server that color changed
   socket.emit('colorChange');
 }

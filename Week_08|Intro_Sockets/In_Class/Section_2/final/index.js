@@ -38,9 +38,9 @@ io.on('connection', (socket) => {
   });
 
   //STEP 10.2 LISTEN FOR COLOR CHANGE
-  socket.on('colorChange', (data) => {
+  socket.on('colorChange', () => {
     //10.3. SEND BACK TO THE CLIENTS
-    io.emit('colorChange', data);
+    io.emit('colorChange');
   });
 
   //on disconnect

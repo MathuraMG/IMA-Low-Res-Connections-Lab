@@ -1,0 +1,24 @@
+svg{
+    display: block;
+    background-color: aqua;
+    margin: 10px auto;
+}
+.mainCircle{
+    fill: yellow;
+    stroke: purple;
+    stroke-width: 2px;
+}
+.eyeCircles{
+    fill: green;
+}
+.eyeCircles:hover{
+    fill: blue;
+}
+rect{
+    fill: orange;
+}
+.myPaths{
+    fill: red;
+    stroke: green;
+    stroke-width: 4px;
+}

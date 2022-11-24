@@ -16,3 +16,5 @@
 5. Capture video stream: `initCapture()` helper function
 6. Establish socket connection: `setupSocket()` helper function
 7. Setup peer connection: `setupConnection()` helper function
+
+[More Detailed Coding Steps Can Be Found Here](https://docs.google.com/document/d/1eIAJo7GKT8zfBx4Xy-m6sJfO5hxKy-Z4tMfvPE6IOTs/edit?usp=sharing)

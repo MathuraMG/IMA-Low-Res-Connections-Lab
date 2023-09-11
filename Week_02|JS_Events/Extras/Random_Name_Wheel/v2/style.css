@@ -1,0 +1,55 @@
+body,html {
+  padding: 0;
+  margin: 0;
+  background-color:lightcoral;
+  height: 100%;
+  font-family: opensans;
+}
+.rpicker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.rpicker__title {
+  margin: 0;
+}
+
+.rpicker__names {
+  width: 30%;
+  height:30%;
+  display: flex;
+  justify-content:space-between ;
+}
+
+.rpicker__name {
+  font-size: 108px;
+  margin: 18px 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.names__list-item {
+  list-style: none;
+}
+
+/* ANIMATE NAME */
+.rpicker__name--animate {
+  font-size: 10px;
+  animation-name: nameZoon ;
+  margin: 18px 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  animation-duration: 3s;
+}
+
+@keyframes nameZoon {
+  from {font-size: 10px;}
+  to {font-size: 108px;}
+}

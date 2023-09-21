@@ -15,11 +15,14 @@ window.addEventListener("load", function () { //callback function
     let index = Math.floor(Math.random() * 4);
     console.log(batches[index]);
     document.getElementById("heading").innerHTML = batches[index];
+    
+    
+    setTimeout(revertToQuestionMark, 4000);
   })
-
-
-
 
 })
 
-console.log("hello");
+function revertToQuestionMark() {
+  document.getElementById("heading").innerHTML = "???";
+}
+

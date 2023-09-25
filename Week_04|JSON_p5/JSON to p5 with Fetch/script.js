@@ -23,7 +23,7 @@ function draw(){
     //Returns 'true' once astroData is assigned an actual value
     if (astroData){
         for (let i=0; i < astroData.number; i++){
-            ellipse(150 + (i * 100), 150, 75);
+            ellipse(20 + (i * 40), 150, 30);
         }
     }
     else{

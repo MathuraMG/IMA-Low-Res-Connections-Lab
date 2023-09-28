@@ -1,7 +1,7 @@
 //define this in the global scope so we can access it anywhere
 let astroData;
 
-//array to hols the objects
+//array to hold the objects
 let astronauts = [];
 
 //a variable to help plot the ellipses

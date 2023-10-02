@@ -24,6 +24,7 @@ window.addEventListener('load', () => {
 
     //Also show names
     let astronauts = data.people;
+    //As an alternative Promise.all syntax could also be used here
     astronauts.forEach(async (element) => {
       let astronautName = element.name;
       //Replace space in astronaut name w/ %20

@@ -37,8 +37,8 @@
 - Also make sure the server can parse **JSON** with `app.use` code
 
 #### Step 6:
-- Save the data to a database
-- Use the `.insert()` method
+- Save the data to a database - create a db object with the mongoDB database
+- Use the `db.push()` method
 
 #### Step 7:
 - Send a **JSON** response to the client js
@@ -60,7 +60,7 @@
 #### Step 10:
 - Create a route on the server js to receive a **GET** request for all of the data
 - This will be an `app.get()` route
-- Use the `.find({})` method to query all the objects in the database
+- Use the `.get({})` method to query all the objects in the database
 
 #### Step 11:
 - Send a **JSON** repsonse to the client

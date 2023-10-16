@@ -1,0 +1,14 @@
+{
+  "page1": {
+    "text" :"this is a cat",
+    "image" : "https://placekitten.com/400/400"
+  },
+  "page2": {
+    "text" :"this is also a cat",
+    "image" : "https://placekitten.com/200/400"
+  },
+  "page3": {
+    "text" :"this is still a cat",
+    "image" : "https://placekitten.com/400/300"
+  }
+}

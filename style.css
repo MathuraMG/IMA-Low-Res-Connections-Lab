@@ -2,9 +2,9 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 html, body {
-  height: 100%;
   margin: 0;
   background: #fffffa;
+  margin-bottom: 2rem;
 }
 
 .banner {

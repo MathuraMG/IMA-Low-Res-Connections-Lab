@@ -1,0 +1,67 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 ProximaNova-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12680\viewh15140\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf2 Twitter app \'91Y\'92
+\b0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 \ul \ulc2 Infrastructure\ulnone \
+1. Set up a server, 
+\b\fs36 npm install
+\b0\fs48 \
+2. Install nodemon\
+\
+\ul Fetch data from the server on window load\ulnone \
+3. Server: a get route to serve all messages\
+4. Server: send data as an object\
+5. Client: fetch all the messages on window load\
+6. Client: add messages to html on window load\
+\
+\ul Send new messages to the server & add to the page\ulnone \
+7. Client: add event listener to the button & log input value\
+8. Client: on clicking, create a fetch POST request:\
+	8.1. Create an object to send\
+	8.2. Stringify data: 
+\b\fs36 JSON.stringify()
+\b0\fs48 \
+	8.3. Pass it in the fetch POST request\
+9. Server: add a post route to listen for a new message\
+10. Server: parse the message data\
+11. Server: add message to the messages array\
+12. Server: send a message object back to the client\
+13. Client update the feed with the new message\
+\
+\ul Make the feed persistent\ulnone \
+14. Create MongoDB account\
+15. Server: install quickmongo & require it: 
+\b\fs36 npm install quickmongo
+\b0\fs48 \
+16. Server: create a new database & connect to MongoDB\
+17. Server: connect to the database\
+\pard\pardeftab720\partightenfactor0
+
+\b\fs36 \cf2 \cb3 \expnd0\expndtw0\kerning0
+	db.on("ready", () => \{\cb1 \
+\cb3     	console.log("Connected to the database");\cb1 \
+\cb3 	\});\cb1 \
+\cb3 	db.connect(); 
+\b0\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 18. Server: insert a new message to the database\
+19. Server: get the messages from the database, not the messages array\
+20. Client: on window load, load the messages from the database 
+\fs36 (this is already working from step 5, see if there are any updates that need to be made)
+\fs48 \
+\
+\ul What else can you do?\ulnone \
+21. Change date formatting\
+22. Add user names\
+23. Post messages by their date from newest to oldest (you\'92ll have to reverse the messages array, 
+\b\fs36 reverse()
+\b0\fs48 )\
+23. Write a helper function that adds new message instead of repeating the same code twice\
+24. What else?}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet"></link>
+    <title>Welcome to Chirp</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- View everyones chirp here -->
+        <div class="sub-container feed">
+            <h2> Feed </h2>
+            <ul id="chirp-feed"></ul>
+        </div>
+
+        <!-- Enter new chirp here -->
+        <div class="sub-container chirp">
+            <input type="text" class="chirp-input" id="chirp-name" placeholder="name"/>
+            <input type="text" class="chirp-input" id="chirp-msg" placeholder="What's your chirp today?"/>
+            <button id="chirp-submit">Chirp!</button>
+        </div>
+    </div>
+    
+</body>
+</html>

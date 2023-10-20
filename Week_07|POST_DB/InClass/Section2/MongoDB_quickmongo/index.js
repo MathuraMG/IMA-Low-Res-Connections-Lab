@@ -26,7 +26,7 @@ app.listen(port, () => {
 
 /*DATABASE */
 const { Database } = require("quickmongo");
-const db = new Database("mongodb+srv://cl-class:GkXGO76XgCm6hDkp@class.ectifew.mongodb.net/?retryWrites=true&w=majority")
+const db = new Database("your url")
 db.on('ready', () => {
   console.log("Connected to the database");
 });

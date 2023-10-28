@@ -8,7 +8,7 @@ app.use(express.json());
 //1. connect to the DB
 //setup DB and connect
 const { Database } = require("quickmongo");
-const db = new Database("mongodb+srv://mmg542:quickmongo@cluster0.p0bscd5.mongodb.net/?retryWrites=true&w=majority");
+const db = new Database("mongodb+srv://mmg542:oct25password@cluster0.p0bscd5.mongodb.net/?retryWrites=true&w=majority");
 db.on("ready", () => {
     console.log("Connected to the database");
 });

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIVIA SCREEN</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="button-container">
+        <button class="button" id="get-question"> Get Questions </button>
+        <button class="button" id="get-answer"> Show Answer </button>
+    </div>
+    <div class="question-container">
+        <p id="question">
+        </p>
+    </div>
+    <div class="answer-container">
+        <p id="answer-total">
+        </p>
+        <p id="answer-right">
+        </p>
+        <p id="answer-wrong">
+        </p>
+    </div>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

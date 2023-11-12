@@ -29,8 +29,10 @@ window.addEventListener('load', () => {
     let txt = document.getElementById('txt');
     let txtValue = txt.value;
     //Send a reply
+    
     bot.reply(username, txtValue).then(function (reply) {
       console.log("The bot says: " + reply);
+      sortReplies();
       txt.value = "";
     });
   });

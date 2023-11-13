@@ -106,14 +106,9 @@ This section, we will look into how we can use other libraries (such as D3 or ML
                 </a>
             </li>
             <li class="list-item">
-                <a href="https://mathuramg.com/IMA-Low-Res-Connections-Lab/Week_11%7CClient_Side_Libraries/video_chat_simplepeer/"
-                    target="_blank" class="link">
-                    ToneJS Example
-                </a>
-                |
                 <a href="https://github.com/MathuraMG/IMA-Low-Res-Connections-Lab/tree/master/Week_11%7CClient_Side_Libraries/video_chat_simplepeer"
                     target="_blank" class="link">
-                    Code
+                    Video Chat simple peer - Code
                 </a>
             </li>
 

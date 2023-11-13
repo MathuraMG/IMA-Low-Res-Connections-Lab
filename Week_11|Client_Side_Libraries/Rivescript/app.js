@@ -30,9 +30,11 @@ window.addEventListener('load', () => {
     let txtValue = txt.value;
     //Send a reply
     
+    bot.sortReplies();
     bot.reply(username, txtValue).then(function (reply) {
       console.log("The bot says: " + reply);
-      sortReplies();
+      document.getElementById("botReply").innerHTML = reply;
+      // sortReplies();
       txt.value = "";
     });
   });

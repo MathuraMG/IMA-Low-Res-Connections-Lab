@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
   }).addTo(map);
 
   //Let's add a marker icon
-  var thunderIcon = L.icon({
+  let thunderIcon = L.icon({
     iconUrl: 'icons/thunder.png',
 
     iconSize: [38, 38], // size of the icon

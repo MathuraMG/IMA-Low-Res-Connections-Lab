@@ -12,7 +12,7 @@ let theButton = document.getElementById('new-name-button');
 console.log(theButton);
 
 //Define the function to be called 'inside' the callback after the click occurs
-function updateName(){
+function updateName() {
     //Get a random name
     let nameNum = Math.floor(Math.random() * names.length);
     console.log(nameNum);
@@ -23,7 +23,7 @@ function updateName(){
     let nameEl = document.getElementById('cohort-name');
     console.log(nameEl);
     //Update the element on the page
-    nameEl.innerHTML = cohortName;  
+    nameEl.innerHTML = cohortName;
 }
 
 //Attach an event listener to the button

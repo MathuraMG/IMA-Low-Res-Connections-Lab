@@ -1,0 +1,108 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 ProximaNova-Regular;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid2\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{square\}}{\leveltext\leveltemplateid3\'01\uc0\u9642 ;}{\levelnumbers;}\fi-360\li2160\lin2160 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14040\viewh16000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs48 \cf2 \
+First server with Express
+\b0 \
+\
+\ul \ulc2 Setup\ulnone \
+1. Create a project folder & open in vscode\
+2. Create 
+\f1\fs44 \cf2 index.js
+\f0\fs48 \cf2  file and test it\
+3. Initialize a folder as a server folder: 
+\f1\fs44 \cf2 npm init
+\f0\fs48 \cf2 \
+4. Install express: 
+\f1\fs44 \cf2 npm install express
+\f0\fs48 \cf2 \
+\
+\ul First server\ulnone \
+5. Require express\
+6. Create an \'93app\'94 object\
+7. Add the first route\
+8. Tell which port to listen on to run the server\
+9. Run the server: 
+\f1\fs44 \cf2 node index.js
+\f0\fs48 \cf2 \
+\
+\ul Additional\ulnone \
+10. Create additional routes\
+11. Serve client-side code: 
+\f1\fs44 \cf2 app.use(express.static(\'91public\'92))
+\f0\fs48 \cf2 \
+12. Serve json data: 
+\f1\fs44 \cf2 response.json()
+\f0\fs48 \cf2 \
+13. Access data on the client side (
+\f1 \cf2 fetch()
+\f0 \cf2 )\
+14. Serve specific data: 
+\f1\fs44 \cf2 request.params
+\f0\fs48 \cf2 \
+15. Push to Github using git\
+\
+\ul Pushing to Github\ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Create a local git repo:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}
+\f1\fs44 \expnd0\expndtw0\kerning0
+git init
+\f0\fs48  - initialize a local repository\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}
+\f1\fs44 \expnd0\expndtw0\kerning0
+git status
+\f0\fs48  - check the current status of the repository\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}
+\f1\fs44 \expnd0\expndtw0\kerning0
+git add .
+\f0\fs48  - add everything into the git folder (track files)\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}
+\f1\fs44 \expnd0\expndtw0\kerning0
+git commit -m "message"
+\f0\fs48  - commit files to the folder and add a message\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Move to Github:\
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls1\ilvl1\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Create a new repo\
+\ls1\ilvl1\kerning1\expnd0\expndtw0 {\listtext	
+\f2 \uc0\u9702 
+\f0 	}\expnd0\expndtw0\kerning0
+Connect local to online:\
+\pard\tx1660\tx2160\pardeftab720\li2160\fi-2160\partightenfactor0
+\ls1\ilvl2\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \cf2 \uc0\u9642 
+\f0 \cf2 	}
+\f1\fs44 \cf2 \expnd0\expndtw0\kerning0
+git remote add origin <url>
+\f0\fs48 \
+\ls1\ilvl2\cf2 \kerning1\expnd0\expndtw0 {\listtext	
+\f2 \cf2 \uc0\u9642 
+\f0 \cf2 	}
+\f1\fs44 \cf2 \expnd0\expndtw0\kerning0
+git push origin main
+\f0\fs48 \cf2 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\pardeftab720\partightenfactor0
+\cf2 \
+}

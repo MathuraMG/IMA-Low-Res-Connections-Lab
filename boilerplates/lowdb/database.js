@@ -3,10 +3,6 @@ import { Low } from 'lowdb'
 import { JSONFile } from 'lowdb/node'
 
 // Set up lowdb
-
-// Here we're using users as an example, but you can store any type of data
-// Let's say our user's data structure looks like this:
-// { id: 1, name: 'John Doe' }
 const defaultData = { users: [] }; 
 const adapter = new JSONFile('db.json');
 const db = new Low(adapter, defaultData);

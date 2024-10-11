@@ -11,7 +11,7 @@ const defaultData = { users: [] };
 const adapter = new JSONFile('db.json');
 const db = new Low(adapter, defaultData);
 
-// Function to initialize the database (i.e. loading data from db.json)
+// Function to initialize the database
 function initializeDb() {
   return db.read()
     .then(() => {
@@ -29,126 +29,61 @@ function initializeDb() {
     })
 }
 
-// CREATE: Add a new user
-function addUser(user) {
+// ADD: Add new data to the database
+function addData(key, value) {
   return db.read()
     .then(() => {
-      db.data.users.push(user)
+      // Add or replace data at the specified key
+      db.data[key] = value
       return db.write()
     })
     .then(() => {
-      console.log('User added successfully')
-      return user
+      console.log('Data added successfully')
+      return db.data[key]
     })
     .catch((error) => {
-      console.error('Error adding user:', error)
+      console.error('Error adding data:', error)
     })
 }
 
-// READ: Get all users
-function getAllUsers() {
+// READ: Get all data from the database
+function readAllData() {
   return db.read()
     .then(() => {
-      return db.data.users
+      return db.data
     })
     .catch((error) => {
-      console.error('Error retrieving users:', error)
+      console.error('Error reading data:', error)
     })
 }
 
-// UPDATE: Update a user by ID
-function updateUser(id, updatedInfo) {
+// UPDATE: Update data in the database
+function updateData(key, updateFunction) {
   return db.read()
     .then(() => {
-      // Find the user with the matching id
-      let userFound = false;
-      for (let i = 0; i < db.data.users.length; i++) {
-        if (db.data.users[i].id === id) {
-          // User found, update their information
-          userFound = true;
-          
-          // Create a new object with updated information
-          let updatedUser = {
-            id: db.data.users[i].id,
-            name: updatedInfo.name || db.data.users[i].name,
-            email: updatedInfo.email || db.data.users[i].email
-            // Add other fields as necessary
-          };
-          
-          // Replace the old user object with the updated one
-          db.data.users[i] = updatedUser;
-          
-          // Save the changes
-          return db.write()
-            .then(() => {
-              console.log('User updated successfully');
-              return updatedUser;
-            });
-        }
-      }
-      
-      // If we've gone through the whole array and haven't found the user
-      if (!userFound) {
-        throw new Error('User not found');
-      }
-    })
-    .catch((error) => {
-      console.error('Error updating user:', error);
-    });
-}
-
-// DELETE: Delete a user by ID
-function deleteUser(id) {
-  return db.read()
-    .then(() => {
-      let userFound = false;
-      let newUsersList = [];
-
-      // Go through all users
-      for (let i = 0; i < db.data.users.length; i++) {
-        // If this is not the user we want to delete, add them to the new list
-        if (db.data.users[i].id !== id) {
-          newUsersList.push(db.data.users[i]);
-        } else {
-          // If we find the user to delete, mark that we found them
-          userFound = true;
-        }
-      }
-
-      // If we found and removed the user, update the database
-      if (userFound) {
-        db.data.users = newUsersList;
+      if (key in db.data) {
+        // Apply the update function to the existing data
+        db.data[key] = updateFunction(db.data[key])
         return db.write()
-          .then(() => {
-            console.log('User deleted successfully');
-          });
       } else {
-        // If we didn't find the user, throw an error
-        throw new Error('User not found');
+        throw new Error('Key not found in database')
       }
     })
+    .then(() => {
+      console.log('Data updated successfully')
+      return db.data[key]
+    })
     .catch((error) => {
-      console.error('Error deleting user:', error);
-    });
+      console.error('Error updating data:', error)
+    })
 }
 
 // Example usage
 initializeDb()
-  .then(() => addUser({ id: 1, name: 'YG', email: 'yg@lowres.com' }))
-  .then(() => addUser({ id: 2, name: 'Ruta', email: 'ruta@lowres.com' }))
-  .then(() => getAllUsers())
-  .then(users => console.log('All users:', users))
-  .then(() => updateUser(2, { name: 'Craig', email: 'craig@lowres.com' }))
-  .then(() => deleteUser(1))
+  .then(() => addData('users', [{ id: 1, name: 'YG' }]))
+  .then(() => readAllData())
+  .then(data => console.log('All data:', data))
+  .then(() => updateData('users', users => [...users, { id: 2, name: 'Ruta' }]))
+  .then(() => readAllData())
+  .then(data => console.log('Updated data:', data))
   .catch(error => console.error('Error in operations:', error))
-
-// You should see this output after running the script for the first time:
-// {
-//   "users": [
-//     {
-//       "id": 2,
-//       "name": "Craig",
-//       "email": "craig@lowres.com"
-//     }
-//   ]
-// }

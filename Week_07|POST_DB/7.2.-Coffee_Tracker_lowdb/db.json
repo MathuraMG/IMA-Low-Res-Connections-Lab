@@ -1,0 +1,16 @@
+{
+  "coffeeTrackerData": [
+    {
+      "date": "Thu Oct 10 2024 12:51:28 GMT-0400 (Eastern Daylight Time)",
+      "coffee": "1"
+    },
+    {
+      "date": "Thu Oct 10 2024 12:51:30 GMT-0400 (Eastern Daylight Time)",
+      "coffee": "3"
+    },
+    {
+      "date": "Thu Oct 10 2024 12:51:31 GMT-0400 (Eastern Daylight Time)",
+      "coffee": "2"
+    }
+  ]
+}

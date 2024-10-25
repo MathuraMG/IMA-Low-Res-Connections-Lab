@@ -1,0 +1,108 @@
+body {
+  font-family: 'Helvetica';
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+
+/** OPTIONS AREA **/
+
+
+.options-heading {
+  display: contents;
+  color: #444444;
+  font-size: 24px;
+}
+
+.options-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #d38b7d;
+    align-items: center;
+}
+
+.option-button {
+  padding: 10px;
+  width: 20%;
+  font-size: 16px;
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 5px;
+}
+.option-button:hover {
+  background: #00000044;
+  cursor: pointer;
+}
+
+.option-button-selected {
+  background: #00000044;
+}
+
+.button-options:hover {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+/** SEND A MESSAGE **/
+
+.send-messages {
+  display: none;
+  font-size: 16px;
+  width: 100%;
+  justify-content: space-around;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  background: #0000000d;
+  width: 100%;
+}
+.send-messages-show {
+  display: flex;
+}
+.send-button {
+  padding: 10px;
+  font-size: 12px;
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 5px;
+}
+
+.send-input {
+  border-radius: 5px;
+  background-color: #ffffffaa;
+  width: 50%;
+}
+
+
+/* THE ACTUAL ROOMS */
+
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #fec499;
+
+}
+.messages {
+
+  height: 100%;
+  width: 100%;
+}
+
+.message {
+  background: #0000000d;
+  padding: 20px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+}

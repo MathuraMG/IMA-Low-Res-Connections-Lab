@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Gemini Chatbot</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Gemini Chatbot</h1>
+
+        <div class="input-group">
+            <label for="apiKey">Google API Key:</label>
+            <input type="text" id="apiKey" placeholder="Enter your Gemini API key">
+        </div>
+        
+        <div id="chatArea" class="chat-area">
+            <div class="message bot-message">
+                Hello! I'm a simple chatbot powered by Gemini. Enter your API key above to begin.
+            </div>
+        </div>
+
+        <div class="input-group">
+            <textarea id="userInput" placeholder="Type your message here..."></textarea>
+        </div>
+
+        <button onclick="sendMessage()">Send Message</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

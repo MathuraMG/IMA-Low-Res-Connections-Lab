@@ -1,0 +1,62 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 1%;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: #88CCFF;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 80vh;
+}
+
+#advice_list {
+  width: 60vw;
+}
+
+.advice {
+  padding: 10px;
+  font-size: 4vh;
+  height: 9vh;
+}
+
+#smurf_media {
+  width: 30vw;
+}
+
+#smurf {
+  animation-name: move;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0vh);
+  }
+
+  18% {
+    transform: translateY(12vh);
+  }
+
+  36% {
+    transform: translateY(24vh);
+  }
+
+  54% {
+    transform: translateY(38vh);
+  }
+
+  70% {
+    transform: translateY(52vh);
+  }
+}
+footer{
+  font-size: small;
+}

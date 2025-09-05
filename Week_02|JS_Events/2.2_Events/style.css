@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 3000px;
+}
+
+.project__heading {
+    text-align: center;
+
+}
+
+.project__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project__count {
+    font-size: 72px;
+}
+
+.project__button {
+    font-size: 16px;
+}
+
+.project__extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}

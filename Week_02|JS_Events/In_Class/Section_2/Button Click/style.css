@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* styling for the cohort names div */
+.cohort-name{
+    font-size: 5em;
+    margin-top: 50px;
+}

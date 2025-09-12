@@ -1,0 +1,32 @@
+body {
+  background-color: bisque;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* x axis */
+  align-items: center; /* y axis */
+  height: 100%;
+}
+
+#name{
+font-size: 108px;
+margin: 18px 0;
+text-transform: uppercase;
+font-weight: 900;
+}
+
+.name_animation{
+  animation: name 3s infinite;
+}
+
+@keyframes name{
+  0% {
+    font-size: 108px;
+  }
+  100% {
+    font-size: 200px;
+  }
+}

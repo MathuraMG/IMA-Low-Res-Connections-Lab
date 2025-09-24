@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-    let dataURL = "http://api.open-notify.org/astros.json";
+    let dataURL = "https://api.open-notify.org/astros.json";
     fetch(dataURL)
         .then(response => response.json())
         .then(data => {

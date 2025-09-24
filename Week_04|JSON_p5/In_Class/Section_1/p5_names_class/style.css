@@ -1,0 +1,27 @@
+body{
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+  margin: 10%;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.astronaut_number{
+  color:darkblue;
+  font-size: 10vh;
+}
+
+.astronaut_name {
+  color: chocolate;
+  font-size: 8vh;
+}

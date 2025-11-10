@@ -6,15 +6,15 @@ let conversationHistory = [{
 }];
 
 async function sendMessage() {
-    const apiKey = document.getElementById('apiKey').value.trim();
+    const apiKey = document.querySelector('#apiKey').value.trim();
     if (!apiKey) {
         appendMessage('Please enter your API key first.', 'bot');
         return;
     }
 
-    const userInput = document.getElementById('userInput');
+    const userInput = document.querySelector('#userInput');
     const message = userInput.value.trim();
-    
+
     if (!message) return;
 
     appendMessage(message, 'user');
@@ -22,7 +22,7 @@ async function sendMessage() {
         role: 'user',
         parts: [{ text: message }]
     });
-    
+
     userInput.value = '';
 
     try {
@@ -36,11 +36,11 @@ async function sendMessage() {
                     {
                         role: 'user',
                         parts: [{
-                            text: `You are a helpful and friendly educational assistant. 
+                            text: `You are a helpful and friendly educational assistant.
                                   Please maintain consistent context throughout our conversation.
                                   Here is our conversation history followed by the latest message:
-                                  
-                                  ${conversationHistory.map(msg => 
+
+                                  ${conversationHistory.map(msg =>
                                       `${msg.role}: ${msg.parts[0].text}`
                                   ).join('\n')}`
                         }]
@@ -50,13 +50,13 @@ async function sendMessage() {
         });
 
         const data = await response.json();
-        
+
         if (data.error) {
             throw new Error(data.error.message || 'API Error');
         }
 
         const botResponse = data.candidates[0].content.parts[0].text.trim();
-        
+
         appendMessage(botResponse, 'bot');
         conversationHistory.push({
             role: 'model',
@@ -74,7 +74,7 @@ async function sendMessage() {
 }
 
 function appendMessage(message, sender) {
-    const chatArea = document.getElementById('chatArea');
+    const chatArea = document.querySelector('#chatArea');
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${sender}-message`;
     messageDiv.textContent = message;
@@ -82,7 +82,7 @@ function appendMessage(message, sender) {
     chatArea.scrollTop = chatArea.scrollHeight;
 }
 
-document.getElementById('userInput').addEventListener('keydown', function(e) {
+document.querySelector('#userInput').addEventListener('keydown', function(e) {
     if (e.key === 'Enter' && !e.shiftKey) {
         e.preventDefault();
         sendMessage();

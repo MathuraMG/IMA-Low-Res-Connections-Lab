@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.animated-box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    animation: changeBox 3s infinite alternate;
+}
+
+@keyframes changeBox {
+    0% {
+        background-color: #3498db;
+        transform: scale(1);
+    }
+    50% {
+        background-color: #e74c3c;
+    }
+    100% {
+        background-color: #2ecc71;
+        transform: scale(1.5);
+    }
+}

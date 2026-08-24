@@ -1,0 +1,34 @@
+/* elimiinate any default margin or padding on the page */
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+/* set a maximum width limit */
+.main-container{
+	max-width: 980px;
+	width: 90%;
+	margin: 10px auto;
+}
+
+/* heights values are included here for demonstration purposes */
+/* usually the height would be deterined based on the contents of the element */
+.top-container{
+	height: 100px;
+	background-color: blue;
+}
+.middle-container{
+	height: 400px;
+	background-color: aqua;
+}
+.bottom-container{
+	height:	100px;
+	background-color: gray;
+} 
+
+/* adjust the overall width whenever the window width is less than 640px */
+@media (max-width: 640px) {
+	.main-container {
+		width: 60%;
+	}
+}

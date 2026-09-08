@@ -1,0 +1,37 @@
+html,body{
+	text-align: center;
+}
+
+.button_container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 50px 0;
+}
+
+.square_container{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.squares{
+	display: inline-block;
+	width: 20%;
+	height: 200px;
+	margin: auto;
+} 
+
+.red{
+	background-color: rgb(255,0, 0);
+}
+
+.green{
+	background-color: rgb(0, 255, 0);
+}
+
+.blue{
+	background-color: rgb(0, 0, 255);
+}

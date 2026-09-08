@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+div {
+  width: 220px;
+  height: 220px;
+  margin: 10px auto;
+  background-color: black;
+}
+
+p{
+  text-align: center;
+}
+
+.button-container{
+  display: flex;
+  flex: row;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  margin: 5px 10px;
+}

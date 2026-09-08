@@ -1,0 +1,23 @@
+body {
+  font-family: 'Barriecito', cursive;
+  height: 200vh;
+  background: linear-gradient(to bottom, #f7cad0 0%, #cf8b95 100%); 
+}
+
+.box {
+  position: fixed;
+  bottom: 0;
+  width: 30vw;
+}
+
+.line-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  font-size: 5vh;
+}

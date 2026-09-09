@@ -1,0 +1,22 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+h1{
+    margin: 30px auto;
+}
+
+button{
+    padding: 5px 25px;
+}
+
+.cohort-names{
+    font-size: 6em;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+

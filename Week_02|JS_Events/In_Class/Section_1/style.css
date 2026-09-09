@@ -1,0 +1,11 @@
+body {
+  background-color: blanchedalmond;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+}
+.game-image {
+  width: 30%;
+}

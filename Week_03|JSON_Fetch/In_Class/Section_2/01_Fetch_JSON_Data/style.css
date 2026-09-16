@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div {
+    font-size: 5em;
+}
+
+.container-title{
+    font-size: 2em;
+}

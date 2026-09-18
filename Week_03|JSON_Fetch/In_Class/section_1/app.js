@@ -9,9 +9,12 @@
 //   })
 // }
 
+//async-await is still promises,
 async function getRandomQuestion() {
+  
   let response = await fetch("data.json")
   let data = await response.json();
+  
   let totalQuestions = data.personality_test.length;
   let randNo = Math.floor(Math.random()*totalQuestions);
   document.getElementById("question").innerHTML = data.personality_test[randNo];

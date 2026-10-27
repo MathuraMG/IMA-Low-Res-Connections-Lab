@@ -1,0 +1,38 @@
+body {
+    background-color: #d1e0f4;
+    font-family: 'Helvetica';
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.button {
+  background-color: transparent;
+  border: 3px solid #444444;
+  border-radius: 10px;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #444444;
+  color: #d1e0f4;
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-top: 10px;
+}

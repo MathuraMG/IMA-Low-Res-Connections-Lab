@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style_private.css" rel="stylesheet">
+    </link>
+    <title>Chat - Private Room</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- View chat messages here here -->
+        <div class="sub-container chat-feed">
+            <div class="chat-header">Chat Room - <span id="private-room-name">Private Room</span></div>
+            <div class="chat-box" id="chat-box-msgs"></div>
+        </div>
+
+        <!-- Enter chat messages here -->
+        <div class="sub-container chat-input">
+            <input type="text" class="chat-input-name" id="name-input" placeholder="Name" />
+            <input type="text" class="chat-input-msg" id="msg-input" placeholder="Message" />
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="app_private.js"></script>
+</body>
+</html>

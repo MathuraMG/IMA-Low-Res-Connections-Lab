@@ -29,8 +29,8 @@ io.on("connect", (socket)=> {
   socket.on("newMessage", async (data)=> {
     try {
       //MODERATION NOTE : YOU CAN CHANGE WHICH WAY YOU WANT IT MODERATED HERE
-      const result = await moderateWithLeo(data.msg);
-    // const result = await moderateWithOpenAI(data.msg);
+      // const result = await moderateWithLeo(data.msg);
+    const result = await moderateWithOpenAI(data.msg);
 
       if (!result.ok) {
           socket.emit('rejected', result.reason); // only the sender hears about it
@@ -60,6 +60,7 @@ server.listen(PORT, ()=> {
 
 
 // MODERATION NOTE - OPTION 1
+// make sure to run "npm install leo-profanity"
 import filter from 'leo-profanity';
 
 export async function moderateWithLeo(text) {

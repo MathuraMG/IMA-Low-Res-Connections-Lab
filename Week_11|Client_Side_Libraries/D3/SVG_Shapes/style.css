@@ -1,0 +1,15 @@
+svg{
+    background-color: aqua;
+}
+circle{
+    fill: pink;
+}
+circle:hover{
+    fill: red;
+}
+rect{
+    fill: yellow;
+}
+rect:hover{
+    fill: green;
+}

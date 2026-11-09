@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
+    <title>SVG Face</title>
+</head>
+<body>
+
+	<!-- Make a Smiley Face using SVG markup-->
+    <svg width="600px" height="600px">
+        <circle id="face" class="mainCircle" cx="300" cy="300" r="200"/>
+        <circle class="eyeCircles" cx="225" cy="200" r="30"/>
+        <circle class="eyeCircles" cx="375" cy="200" r="30"/>
+        <rect x="295" y="240" width="10" height="30"/> 
+        <path class="myPaths" d="M150 300 Q 300 550 450 300"/>
+    </svg>
+
+    <script src="app.js"></script>
+</body>
+</html>

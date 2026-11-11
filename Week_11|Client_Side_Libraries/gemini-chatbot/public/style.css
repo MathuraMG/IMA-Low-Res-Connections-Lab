@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#chat {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bubble {
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 80%;
+    white-space: pre-wrap; /* keeps line breaks in the bot's reply */
+    line-height: 1.5;
+}
+
+.bubble.user {
+    align-self: flex-end;
+    background: #d9ecff;
+}
+
+.bubble.model {
+    align-self: flex-start;
+    background: #f0f0f0;
+}
+
+#input-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+#message {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: wait;
+    opacity: 0.6;
+}

@@ -1,0 +1,75 @@
+html, body {
+  background: beige;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.image {
+  width: 300px;
+}
+
+#hand {
+
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+}
+
+.hat {
+  
+}
+
+#idea {
+      position: absolute;
+    width: 100%;
+    bottom: 20px;
+  font-size: larger;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #59406e;
+}
+
+.hand-animate {
+  animation: pick 3s ;
+}
+
+.chit-animate {
+  animation: chit 3s;
+}
+.name {
+  width:100px;
+  height: 40px;
+  position: absolute;
+  top: 270px;
+  font-size: 20px;
+  background-color: gold;
+  text-align: center;
+  /* max-width: auto; */
+  margin: 0;
+  
+}
+@keyframes pick {
+  0%   {top: 50px;}
+  50%  {top: 220px;}
+  100% {top: 50px;}
+}
+
+@keyframes chit {
+  0%   {z-index: -10; height: 0px; top:440px}
+  50%  {z-index: -10;height: 0px; top:440px}
+  55% {z-index: 1;height:40px}
+  100% {height: 40px; top: 270px}
+}
+
+@keyframes hat-spin {
+
+}

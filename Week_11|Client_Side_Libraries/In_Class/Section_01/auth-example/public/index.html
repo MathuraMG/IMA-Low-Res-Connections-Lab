@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login example</title>
+    <style>
+        body { font-family: sans-serif; max-width: 400px; margin: 40px auto; padding: 0 20px; }
+        input, button { font-size: 1rem; padding: 8px; margin: 4px 0; width: 100%; box-sizing: border-box; }
+        button { cursor: pointer; }
+        .row { display: flex; gap: 8px; }
+        hr { margin: 24px 0; }
+    </style>
+</head>
+<body>
+    <h1>Login example</h1>
+
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password">
+    <div class="row">
+        <button id="register">Register</button>
+        <button id="login">Log in</button>
+    </div>
+
+    <hr>
+
+    <button id="get-secret">Get the secret (logged in only)</button>
+    <button id="logout">Log out</button>
+
+    <p id="output"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
